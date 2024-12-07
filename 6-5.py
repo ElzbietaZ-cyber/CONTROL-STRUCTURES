@@ -10,16 +10,21 @@
 # Then check the correctness of the program for the following temperatures in degrees Celsius: 33, 30, 8, 0, -2
 
 ###
-# Program that simulates the operation of an electronic thermometer.
-#
+# Program symulujący działanie elektronicznego termometru
+# Program wypisuje komunikaty na podstawie temperatury w stopniach Celsjusza
+###
+
+# Przykładowa temperatura
 temperature = -2
+
+# Sprawdzanie temperatury i wypisywanie odpowiednich komunikatów
 if temperature > 35:
-    print("It is extermely hot")
+    print("It is extremely hot")  # Bardzo gorąco, jeśli temperatura jest większa niż 35
 elif temperature > 30:
-    print("It is hot")
+    print("It is hot")  # Gorąco, jeśli temperatura jest większa niż 30
 elif temperature >= 15:
-    print("It is warm")
+    print("It is warm")  # Ciepło, jeśli temperatura wynosi co najmniej 15
 elif temperature >= 0:
-    print("It is cold.")
+    print("It is cold.")  # Zimno, jeśli temperatura wynosi co najmniej 0
 elif temperature < 0: 
-    print("Warning, frost")
+    print("Warning, frost")  # Ostrzeżenie, mróz, jeśli temperatura jest poniżej 0

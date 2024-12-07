@@ -5,13 +5,17 @@
 # Sample result:
 # 0 1 1 2 3 5 8 13 21 34 ...
 
-a = 0
-b = 1
-count = 0
+# Program drukujący pierwsze 20 liczb w ciągu Fibonacciego
 
+# Inicjalizacja pierwszych dwóch liczb ciągu
+a = 0  
+b = 1  
+count = 0  # Licznik, który będzie śledził, ile liczb zostało wydrukowanych
+
+# Pętla do momentu, aż wydrukujemy 20 liczb
 while count < 20:
-    print(a, end=' ')
-    temp = a
-    a = b
-    b = temp + b
-    count += 1
+    print(a, end=' ')  # Drukowanie bieżącej liczby
+    temp = a  # Zapisanie wartości a w zmiennej pomocniczej
+    a = b  # Przypisanie wartości b do a
+    b = temp + b  # Obliczenie następnej liczby ciągu
+    count += 1  # Zwiększenie licznika

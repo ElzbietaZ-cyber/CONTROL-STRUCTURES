@@ -11,11 +11,15 @@
 # speed_limit_min
 # speed_limit_max
 
-car_speed = int(input("Enter car speed (km/h): "))
-speed_limit_min = 40
-speed_limit_max = 140
+# Minimalna i maksymalna dozwolona prędkość na autostradach w Polsce
+speed_limit_min = 40  # Minimalna prędkość (40 km/h)
+speed_limit_max = 140  # Maksymalna prędkość (140 km/h)
 
+# Wprowadzenie prędkości samochodu
+car_speed = int(input("Enter car speed (km/h): "))
+
+# Sprawdzenie, czy prędkość samochodu mieści się w dozwolonym zakresie
 if car_speed >= 40 and car_speed <= 140:
-    print("The car speed is fine.")
+    print("The car speed is fine.")  # Prędkość jest w porządku
 else:
-    print("Warning: invalid car speed!!")
+    print("Warning: invalid car speed!!")  # Przekroczono dozwoloną prędkość

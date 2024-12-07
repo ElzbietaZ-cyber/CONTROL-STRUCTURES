@@ -5,12 +5,15 @@
 # Sample result:
 # 1 2 THREE 4 FIVE THREE 7 ...
 
-for i in range(1, 31):
-    if i % 3 == 0 and i % 5 == 0:
-        print('BINGO', end=' ')
-    elif i % 3 == 0:
-        print('THREE', end=' ')
-    elif i % 5 == 0:
-        print('FIVE', end=' ')
-    else:
-        print(i, end=' ')
+# Program, który wypisuje liczby od 1 do 30. Jeśli liczba jest podzielna przez 3, wypisuje 'THREE',
+# jeśli przez 5, wypisuje 'FIVE', a jeśli przez 3 i 5, wypisuje 'BINGO'.
+
+for i in range(1, 31):  # Pętla od 1 do 30
+    if i % 3 == 0 and i % 5 == 0:  # Jeśli liczba jest podzielna przez 3 i 5
+        print('BINGO', end=' ')  # Wypisz 'BINGO'
+    elif i % 3 == 0:  # Jeśli liczba jest podzielna tylko przez 3
+        print('THREE', end=' ')  # Wypisz 'THREE'
+    elif i % 5 == 0:  # Jeśli liczba jest podzielna tylko przez 5
+        print('FIVE', end=' ')  # Wypisz 'FIVE'
+    else:  # Jeśli liczba nie jest podzielna ani przez 3, ani przez 5
+        print(i, end=' ')  # Wypisz liczbę

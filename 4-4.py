@@ -3,11 +3,22 @@
 # with an extra space between characters (add a space between
 # each character)
 #
+###
+# Wyświetla nazwę uniwersytetu, na którym studiujesz,
+# z dodatkową spacją pomiędzy literami (dodaj spację po każdej literze)
+###
+
+# Nazwa uniwersytetu
 university = 'Krakow University of Economics'
+
+# Zmienna do przechowywania przekształconej nazwy
 university_expanded = ''
 
+# Iteracja przez każdy znak w nazwie uniwersytetu
 for char in university:
-    university_expanded = university_expanded + char + ' '
+    university_expanded = university_expanded + char + ' '  # Dodaj znak i spację
 
-print(university)
+# Wyświetl oryginalną nazwę
+print(university)  
+# Wyświetl przekształconą nazwę z dodatkowymi spacjami
 print(university_expanded)

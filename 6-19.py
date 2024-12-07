@@ -11,13 +11,20 @@
 # Playing computer games: No
 # Has an Instagram account: Yes
 
+# Program przeprowadzający ankietę składającą się z trzech pytań
+# Odpowiedzi są przechowywane w zmiennych logicznych, które będą użyte do wyświetlenia wyników.
+
 print("SURVEY")
+
+# Pobieranie odpowiedzi na pytania ankiety (y/n)
 comp_sci = input("Are you interested in computer science? (y/n): ").strip().lower() == 'y'
 comp_games = input("Do you like playing computer games? (y/n): ").strip().lower() == 'y'
 insta = input("Do you have an Instagram account? (y/n): ").strip().lower() == 'y'
 
+# Wyświetlenie wyników ankiety
 print("\nSURVEY RESULTS")
 
+# Sprawdzanie odpowiedzi na każde pytanie i wyświetlanie wyników
 if comp_sci:
     print("Interested in computer science: Yes")
 else:

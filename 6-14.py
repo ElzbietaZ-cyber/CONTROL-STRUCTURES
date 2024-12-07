@@ -11,42 +11,43 @@
 # instagram = True
 # You are a good influencer!
 
-print("Do you have...")
-s_facebook = input("Facebook? (Y/N): ")
-s_instagram = input("Instagram? (Y/N): ")
-s_twitter = input("Twitter? (Y/N): ")
+# Influencer to osoba, która może wpływać na zachowanie innych ludzi
+# Influencer komunikuje się z innymi ludźmi za pomocą serwisów społecznościowych
+# Program sprawdza, czy osoba ma co najmniej dwa konta w popularnych serwisach: Facebook, Twitter, Instagram
 
+# Zapytanie użytkownika o posiadanie konta w serwisach społecznościowych
+print("Do you have...")
+s_facebook = input("Facebook? (Y/N): ")  # Pytanie o Facebook
+s_instagram = input("Instagram? (Y/N): ")  # Pytanie o Instagram
+s_twitter = input("Twitter? (Y/N): ")  # Pytanie o Twitter
+
+# Przypisanie wartości True lub False do zmiennych w zależności od odpowiedzi użytkownika
 if s_facebook.upper() == "Y":
-    facebook = True
+    facebook = True  # Osoba ma konto na Facebooku
 else:
-    facebook = False
+    facebook = False  # Osoba nie ma konta na Facebooku
 
 if s_instagram.upper() == "Y":
-    instagram = True
+    instagram = True  # Osoba ma konto na Instagramie
 else:
-    instagram = False
+    instagram = False  # Osoba nie ma konta na Instagramie
 
 if s_twitter.upper() == "Y":
-    twitter = True
+    twitter = True  # Osoba ma konto na Twitterze
 else:
-    twitter = False
+    twitter = False  # Osoba nie ma konta na Twitterze
 
-# facebook = True
-# twitter = False
-# instagram = True
-
+# Lista zmiennych odpowiadających za posiadanie kont w serwisach
 apps = [facebook, twitter, instagram]
-apps_count = 0
+apps_count = 0  # Licznik kont w serwisach społecznościowych
 
-
+# Liczenie, ile kont w serwisach społecznościowych posiada użytkownik
 for app in apps:
     if app == True:
-        apps_count += 1 
+        apps_count += 1
 
-
+# Sprawdzanie, czy użytkownik ma co najmniej dwa konta
 if apps_count >= 2:
-    print("You are a good influencer!")
+    print("You are a good influencer!")  # Osoba jest influencerem
 else:
-    print("You are not so good at influencing... ")
-
-
+    print("You are not so good at influencing...")  # Osoba nie jest influencerem

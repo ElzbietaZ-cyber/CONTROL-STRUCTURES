@@ -10,17 +10,29 @@
 # Buy the product!!
 # Product price reduced by 30%
 
-current_price = float(input("Enter the current price: "))
-previous_price = float(input("Enter the previous price: "))
-reduction = ((previous_price - current_price)/previous_price)*100
-    
+###
+# Program analizujący cenę produktu w sklepie internetowym
+# Jeśli cena produktu spadła o co najmniej 10%, program wyświetli rekomendację zakupu.
+###
 
+# Pobranie bieżącej ceny produktu od użytkownika
+current_price = float(input("Enter the current price: "))
+
+# Pobranie poprzedniej ceny produktu od użytkownika
+previous_price = float(input("Enter the previous price: "))
+
+# Obliczenie procentowej obniżki ceny
+reduction = ((previous_price - current_price) / previous_price) * 100
+
+# Wyświetlenie bieżącej i poprzedniej ceny
 print(f"Current product price: {current_price}")
 print(f"Previous product price: {previous_price}")
 
+# Sprawdzenie, czy cena spadła o co najmniej 10%
 if current_price < previous_price and reduction >= 10:
+    # Jeśli cena spadła o 10% lub więcej, rekomendacja zakupu
     print("Buy the product!!")
-    print(f"Product reduced by {reduction}%")
+    print(f"Product price reduced by {reduction}%")
 else:
+    # Jeśli cena nie spadła o co najmniej 10%, nie zaleca się zakupu
     print("Don't buy it.")
-

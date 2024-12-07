@@ -13,7 +13,9 @@
 # 6 x 9 = 54
 # 6 x 10 = 60
 
-number = int(input("Enter number: "))
+# Program, który tworzy tabelę mnożenia dla dowolnej liczby w zakresie od 1 do 10.
 
-for i in range(1, 11):
-    print(f"{number} x {i} = {number * i}")
+number = int(input("Enter number: "))  # Pobierz liczbę od użytkownika
+
+for i in range(1, 11):  # Pętla dla liczb od 1 do 10
+    print(f"{number} x {i} = {number * i}")  # Wypisz wynik mnożenia

@@ -8,10 +8,18 @@
 # Article number is correct
 # Article manufactured in Poland
 
-ean13 = input("Enter the EAN-13 article number: ")
+# EAN-13 (European Article Number) to kod kreskowy do oznaczania towarów
+# Pierwsze trzy cyfry (590) zazwyczaj wskazują na towary wyprodukowane w Polsce
+# Program sprawdza, czy numer EAN-13 składa się dokładnie z 13 cyfr (znaków)
+
+ean13 = input("Enter the EAN-13 article number: ")  # Pobranie numeru EAN-13 od użytkownika
+
+# Sprawdzenie, czy numer ma dokładnie 13 znaków
 if len(ean13) == 13:
-    print("The article number is correct")
-    if "590" in ean13[0:3]:
-        print("Article manufactured in Poland")
+    print("The article number is correct")  # Jeśli numer ma 13 znaków, jest poprawny
+    
+    # Sprawdzenie, czy numer zaczyna się od "590" (co wskazuje na Polskę)
+    if ean13[:3] == "590":
+        print("Article manufactured in Poland")  # Produkt wyprodukowany w Polsce
 else:
-    print("The article number is incorrect")
+    print("The article number is incorrect")  # Jeśli numer nie ma 13 znaków, jest niepoprawny

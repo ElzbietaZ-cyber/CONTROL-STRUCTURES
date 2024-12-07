@@ -8,7 +8,11 @@
 # 6 13 20 27 34 41 48
 # 7 14 21 28 35 42 49
 
+# Program do generowania kuponu lotto
+
+# Pętla iterująca przez 7 wierszy
 for i in range(1, 8):
+    # Pętla iterująca przez 7 liczb w każdym wierszu
     for j in range(0, 7):
-        print(i + j * 7, end=' ')
-    print()
+        print(i + j * 7, end=' ')  # Obliczenie i wydrukowanie liczby
+    print()  # Przejście do nowego wiersza po każdym zestawie liczb

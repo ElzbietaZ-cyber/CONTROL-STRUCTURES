@@ -10,5 +10,7 @@
 # 88888888
 # 999999999
 
-for i in range(1, 10):
-    print(str(i) * i)
+# Program, który tworzy wzór z liczbami
+
+for i in range(1, 10):  # Pętla dla liczb od 1 do 9
+    print(str(i) * i)  # Wydrukuj liczbę i, powtarzaną i razy
