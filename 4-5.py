@@ -6,15 +6,21 @@ plain_text = 'The early bird catches the worm'
 encrypted_text = ''
 
 for char in plain_text:
-    # read the character's code (use ord())
-    encrypted_char = ord(char) + 1
-    # add one to the character's code
-    ...
-    # replace new character code with its
-    # corresponding character (use chr())
-    encrypted_char = chr(encrypted_char)
-    # add encrypted character to encrypted text
-    encrypted_text = encrypted_text + encrypted_char
+    if char.isalpha():
+        if char.islower():  
+            new_char_code = ord(char) + 1
+            if new_char_code > ord('z'):
+                new_char_code -= 26
+        elif char.isupper():  
+            new_char_code = ord(char) + 1
+            if new_char_code > ord('Z'):
+                new_char_code -= 26
+        
+        encrypted_char = chr(new_char_code)
+        
+        encrypted_text += encrypted_char
+    else:
+        encrypted_text += char
 
-print(plain_text)
-print(encrypted_text)
+print("Plain text:", plain_text)
+print("Encrypted text:", encrypted_text)
